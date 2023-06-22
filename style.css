@@ -1,11 +1,24 @@
+/* Seção Header */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
 body {
     margin: 0%;
 }
 
 header {
+    background-image: url(./imagens/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
     width: 100%;
-    height: 30vh;
-    background-color: pink;
+}
+
+#div_header {
+    width: 100%;
+    height: 100vh;
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -15,17 +28,122 @@ header {
 
 #titulo {
     text-align: center;
+    font-size: 100px;
+}
+
+/* Seção Body */
+#area_jogo {
+    display: flex;
+}
+
+#area_cartelas {
+    width: 85%;
+    height: 1000px;
+    background-color: brown;
+    margin: 0px;
+}
+
+#area_cartelas_botoes {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: brown;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+#area_cartelas_bingo {
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.cartela {
+    width: 300px;
+    height: 383px;
+    margin: 10px;
+    margin-top: 2px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+table,
+tr,
+th,
+td {
+    color: black;
+    background-color: whitesmoke;
+    border: 3px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    margin-top: -20px;
+    font-size: x-large;
+}
+
+#area_numeros {
+    width: 25%;
+    height: 1000px;
+    background-color: #004626;
+    margin: 0px;
+}
+
+#area_numeros_botoes {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+#area_numeros_resultados {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.numero_bolinha {
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    margin: 5px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numero-sorteado {
+    background-color: #00eb9c;
+    color: white;
 }
 
 
 
+button {
+    background: none;
+    border: none;
+}
+
+/* Seção Footer */
 footer {
     width: 100%;
     height: 10vh;
-    background-color: pink;
+    background-color: rgb(223, 192, 134);
     margin: 0px;
-    margin-top: 30px;
-    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #footertext {

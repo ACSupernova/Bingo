@@ -11,19 +11,35 @@
 
 <body>
     <header>
-        <h1 id="titulo">Bingo</h1>
+        <div id="div_header">
+            <h1 id="titulo">Bingo da morte</h1>
+        </div>
     </header>
 
     <section id="area_jogo">
         <div id="area_cartelas">
+            <div id="area_cartelas_botoes">
+                <button onclick="criarCartela()"><img src="./imagens/gerarcartela.png" alt="" srcset=""></button>
+                <button onclick="reiniciarJogo()"><img src="./imagens/reiniciar.png" alt="" srcset=""></button>
+            </div>
+            <div id="area_cartelas_bingo">
 
+            </div>
         </div>
 
         <div id="area_numeros">
+            <div id="area_numeros_botoes">
+                <button onclick="GerarResultados()"><img src="./imagens/jogar.png" alt="" srcset=""></button>
+            </div>
+            <div id="area_numeros_resultados">
 
-
+            </div>
         </div>
     </section>
+
+    <script src="CriarTabela.js"></script>
+    <script src="ReiniciarJogo.js"></script>
+    <script src="GerarResultados.js"></script>
 </body>
 
 <footer>
